@@ -34,10 +34,10 @@
     <script>
       $(document).scroll(function() {
           var y = $(this).scrollTop();
-          if (y > 100) {
-              $('#ic-recis').addClass("show");
+          if (y > 140) {
+              $('#ic').addClass("show");
           } else {
-              $('#ic-recis').removeClass("show");
+              $('#ic').removeClass("show");
           }
       });
   </script>

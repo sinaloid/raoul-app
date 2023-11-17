@@ -18,8 +18,7 @@
                     excepturi ullam totam tenetur.
                 </p>
                 <div class="mt-3">
-                    <a class="btn btn-recis font-weight-bold" href="{{ '#' }}">Faire une demande</a>
-                    <!--a class="btn btn-recis font-weight-bold" href="{{ route('details') }}">RECIS</a-->
+                    <a class="btn btn-black font-weight-bold" href="{{ '#' }}">Faire une demande</a>
                 </div>
             </div>
         </div>
@@ -34,31 +33,27 @@
             </p>
         </div>
         <div class="col-12 col-md-10 col-lg-8 mx-auto  d-flex flex-wrap">
-            @foreach (["Ocean, Air Freight & RORO", "Inland Transport", "Warehousing"] as $item)
+            @foreach ($datas as $item)
                 <div class="col-12 col-md-4 py-3">
 
                     <div class="card p-3 w-100" style="height: 100%">
-                        <img width="100%" src="{{ 'https://source.unsplash.com/random/800x800/?service=' . $item }}"
-                            alt="">
+                        <img width="100%" src="{{ asset($item->image) }}" alt="">
 
-                        <h2 class="sm-title-1 font-weight-bold">{{$item}}</h2>
+                        <h2 class="sm-title-1 font-weight-bold">{{ $item->titre }}</h2>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio debitis illo quod inventore
-                            facilis
-                            officiis natus et, eum enim nobis dolorem deleniti similique, error, molestias labore optio
-                            cumque
-                            aspernatur totam!
+                            {{ $item->description }}
                         </p>
                         <div>
-                            <a class="importante font-weight-bold" href="{{route('detailService')}}">En savoir plus</a>
+                            <a class="importante font-weight-bold" href="{{ route('detailService', $item->id) }}">En savoir
+                                plus</a>
                         </div>
                     </div>
                 </div>
             @endforeach
         </div>
         <!--div class="col-12 col-md-10 col-lg-8 mx-auto mt-5 p-3 text-center">
-                            <span class="title-2 importante font-weight-bold text-uppercase">Projections et programmes</span>
-                        </div-->
+                                <span class="title-2 importante font-weight-bold text-uppercase">Projections et programmes</span>
+                            </div-->
         @if (1 == 2)
             <div class="col-12 col-md-10 col-lg-8 mx-auto p-3  d-flex flex-wrap">
                 <div class="col-12 col-lg-4">
@@ -133,26 +128,30 @@
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="bg-white rounded h-100 d-flex align-items-center px-2">
-                        
-                    <form>
-                        <div class="row">
-                            <p class="col-12 mb-3">Envoyez-nous votre message maintenant</p>
-                            <div class="col-12 col-sm-6 mb-3">
-                                <input type="text" class="form-control border" placeholder="Nom et Prénom">
-                            </div>
-                            <div class="col-12 col-sm-6 mb-3">
-                                <input type="email" class="form-control border" placeholder="Email">
-                            </div>
-                            <div class="col-12 col-sm-12 mb-3">
-                                <input type="text" class="form-control border" placeholder="Téléphone">
-                            </div>
-                            <div class="col-12 mb-3">
-                                <textarea class="form-control border" rows="5" placeholder="Entrer votre commentaire"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Envoyer</button>
-                            </div>
+
+                    <form class="w-100 p-4" action="{{ route('createMessage') }}" method="POST">
+                        @csrf
+
+                        <div class="form-group">
+                            <label for="nom">Nom Prenom :</label>
+                            <input type="text" name="nom" class="form-control"
+                                placeholder="Entrer votre nom et prenom" id="nom">
                         </div>
+                        <div class="form-group">
+                            <label for="email">Adresse Email :</label>
+                            <input type="email" name="email" class="form-control" placeholder="Entrer votre email"
+                                id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="telephone">Téléphone :</label>
+                            <input type="text" name="telephone" class="form-control" placeholder="Entrer votre email"
+                                id="telephone">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Commentaire :</label>
+                            <textarea class="form-control" name="description" rows="5" id="comment" placeholder="Entrer votre message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
                     </form>
                 </div>
             </div>

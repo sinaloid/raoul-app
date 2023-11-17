@@ -26,27 +26,12 @@
             
         </div>
         <div class="col-12 col-md-8 col-lg-6 mx-auto mt-2 p-3">
+            <div>
+                <img width="100%" src="{{asset($data->image)}}" alt="service image" />
+            </div>
+            <h2 class="py-4">{{$data->titre}}</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur dolores aliquid laborum, sint neque
-                amet quod voluptates est saepe, corporis enim pariatur illo ad deserunt quos hic eius ab.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur dolores aliquid laborum, sint neque
-                amet quod voluptates est saepe, corporis enim pariatur illo ad deserunt quos hic eius ab.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur dolores aliquid laborum, sint neque
-                amet quod voluptates est saepe, corporis enim pariatur illo ad deserunt quos hic eius ab. <br> <br>
-
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur dolores aliquid laborum, sint neque
-                amet quod voluptates est saepe, corporis enim pariatur illo ad deserunt quos hic eius ab.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur dolores aliquid laborum, sint neque
-                amet quod voluptates est saepe, corporis enim pariatur illo ad deserunt quos hic eius ab.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur dolores aliquid laborum, sint neque
-                amet quod voluptates est saepe, corporis enim pariatur illo ad deserunt quos hic eius ab. <br> <br>
-
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur dolores aliquid laborum, sint neque
-                amet quod voluptates est saepe, corporis enim pariatur illo ad deserunt quos hic eius ab.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur dolores aliquid laborum, sint neque
-                amet quod voluptates est saepe, corporis enim pariatur illo ad deserunt quos hic eius ab.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur dolores aliquid laborum, sint neque
-                amet quod voluptates est saepe, corporis enim pariatur illo ad deserunt quos hic eius ab.
+               {{$data->description}}
             </p>
         </div>
         

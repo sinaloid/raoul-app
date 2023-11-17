@@ -1,8 +1,8 @@
 :root{
-    --primary-color: #3853a4;
+    --primary-color: #ed1d25;
     --secondary-color: #A38537;
     --bg-color: #EAFAFF;
-    --text-color: #000;
+    --black-color: #010101;
     --font-size: 16px;
     --text-underline-offset: 0.3rem;
     --text-decoration-thickness: 2px;
@@ -106,8 +106,12 @@ ul > li > a {
     border-color: var(--primary-color);
 }
 
-.bg-recis {
+.bg-primary {
     background-color: var(--primary-color);
+}
+
+.bg-black{
+    background-color: var(--black-color);
 }
 
 .bannier{
@@ -115,15 +119,37 @@ ul > li > a {
     background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(131,58,180,1) 36%, rgba(252,176,69,1) 100%);
 }
 
-.btn-recis{
+.btn-primary{
     background-color: var(--primary-color) !important;
     color: white !important;
     border: 1px solid var(--primary-color) !important;
 }
 
-.btn-recis:hover{
+.btn-primary:hover{
     background-color: white !important;
     color: var(--primary-color) !important;
+}
+
+.btn-secondary{
+    background-color: white !important;
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+.btn-secondary:hover{
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+.btn-black{
+    background-color: var(--black-color) !important;
+    color: white !important;
+    border: 1px solid var(--black-color) !important;
+}
+
+.btn-black:hover{
+    background-color: white !important;
+    color: var(--black-color) !important;
 }
 
 a:hover{
@@ -131,21 +157,21 @@ a:hover{
     text-decoration-thickness: var(--text-decoration-thickness) !important;
 }
 
-.recis-menu > ul > li > a{
+.link-menu > ul > li > a{
     display: inline-block;
 }
 
-.recis-menu > ul > li > a{
+.link-menu > ul > li > a{
     color: var(--primary-color) !important;
 }
 
-.recis-menu > ul > li > a:hover{
+.link-menu > ul > li > a:hover{
     text-decoration: underline;
     text-underline-offset: var(--text-underline-offset);
     text-decoration-thickness: var(--text-decoration-thickness)
 }
 
-.recis-menu > ul > li > a.active{
+.link-menu > ul > li > a.active{
     text-decoration: underline;
     text-underline-offset: var(--text-underline-offset);
     text-decoration-thickness: var(--text-decoration-thickness)

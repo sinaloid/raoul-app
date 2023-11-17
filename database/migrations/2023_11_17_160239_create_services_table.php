@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRoleInvitesTable extends Migration
+class CreateServicesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateRoleInvitesTable extends Migration
      */
     public function up()
     {
-        Schema::create('role_invites', function (Blueprint $table) {
+        Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->string('libelle');
+            $table->string("titre");
+            $table->string("image");
+            $table->longText("description");
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateRoleInvitesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('role_invites');
+        Schema::dropIfExists('services');
     }
 }

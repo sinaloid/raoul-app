@@ -29,23 +29,19 @@
             </p>
         </div>
         <div class="col-12 col-md-10 col-lg-8 mx-auto  d-flex flex-wrap">
-            @foreach (["Ocean, Air Freight & RORO", "Inland Transport", "Warehousing"] as $item)
+            @foreach ($datas as $item)
                 <div class="col-12 col-md-4 py-3">
 
                     <div class="card p-3 w-100" style="height: 100%">
-                        <img width="100%" src="{{ 'https://source.unsplash.com/random/800x800/?service=' . $item }}"
+                        <img width="100%" src="{{ asset($item->image) }}"
                             alt="">
 
-                        <h2 class="sm-title-1 font-weight-bold">{{$item}}</h2>
+                        <h2 class="sm-title-1 font-weight-bold">{{$item->titre}}</h2>
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio debitis illo quod inventore
-                            facilis
-                            officiis natus et, eum enim nobis dolorem deleniti similique, error, molestias labore optio
-                            cumque
-                            aspernatur totam!
+                            {{$item->description}}
                         </p>
                         <div>
-                            <a class="importante font-weight-bold" href="{{route("detailService")}}">En savoir plus</a>
+                            <a class="importante font-weight-bold" href="{{route("detailService",$item->id)}}">En savoir plus</a>
                         </div>
                     </div>
                 </div>

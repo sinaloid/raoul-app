@@ -28,53 +28,6 @@
         <div class="col-12 col-md-10 col-lg-8 mx-auto mt-5 p-3 text-center">
             <span class="title-2 importante font-weight-bold text-uppercase ">Adresse et formulaire de contact</span>
         </div>
-        <div class="col-12 col-md-10 col-lg-8 mx-auto p-3  d-flex flex-wrap">
-
-
-        </div>
-
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-10 col-lg-8 mx-auto p-3  d-flex flex-wrap">
-            <div class="col-12 col-lg-4">
-                <span class="sm-title-1 d-block font-weight-bold">Adresse</span>
-                <span class="font-weight-bold">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </span>
-                <p>
-                    <span class="font-weight-bold">Sise: </span> Belle Ville - Bobo-Dioulasso<br />
-                    <span class="font-weight-bold">Tel: </span>+226 XX XX XX XX <br />
-
-                </p>
-                <div class="p-2" style="width: fit-content">
-                    <a class="mx-2" href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #4267B2"></i></a>
-                    <!--a class="mx-2" href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a-->
-                    <a class="mx-2" href="#"><i class="fa-brands fa-whatsapp fa-2xl"
-                            style="color: #25D366 !important"></i></a>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-8">
-                <div class="card p-3 ">
-                    <form action="#">
-                        <div class="form-group">
-                            <label for="email">Adresse Email:</label>
-                            <input type="email" class="form-control" placeholder="Entrer votre email" id="email">
-                        </div>
-                        <div class="form-group">
-                            <label for="pwd">Nom Prenom:</label>
-                            <input type="text" class="form-control" placeholder="Entrer votre nom et prenom"
-                                id="pwd">
-                        </div>
-                        <div class="form-group">
-                            <label for="comment">Commentaire :</label>
-                            <textarea class="form-control" rows="5" id="comment" placeholder="Entrer votre message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-recis">Envoyer</button>
-                    </form>
-                </div>
-            </div>
-        </div>
     </div>
 
     <div class="container-xxl py-5">
@@ -121,21 +74,27 @@
                         <p class="d-inline-block border rounded-pill py-1 px-4">Contactez nous</p>
                         <h1 class="mb-4">Besoin d'informations ? Alors contactez-nous</h1>
                         <!--p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p-->
-                        <form action="#">
+                        <form action="{{route("createMessage")}}" method="POST">
+                            @csrf
+                            
                             <div class="form-group">
-                                <label for="email">Adresse Email:</label>
-                                <input type="email" class="form-control" placeholder="Entrer votre email" id="email">
+                                <label for="nom">Nom Prenom :</label>
+                                <input type="text" name="nom" class="form-control" placeholder="Entrer votre nom et prenom"
+                                    id="nom">
                             </div>
                             <div class="form-group">
-                                <label for="pwd">Nom Prenom:</label>
-                                <input type="text" class="form-control" placeholder="Entrer votre nom et prenom"
-                                    id="pwd">
+                                <label for="email">Adresse Email :</label>
+                                <input type="email" name="email" class="form-control" placeholder="Entrer votre email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone :</label>
+                                <input type="text" name="telephone" class="form-control" placeholder="Entrer votre email" id="telephone">
                             </div>
                             <div class="form-group">
                                 <label for="comment">Commentaire :</label>
-                                <textarea class="form-control" rows="5" id="comment" placeholder="Entrer votre message"></textarea>
+                                <textarea class="form-control" name="description" rows="5" id="comment" placeholder="Entrer votre message"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-recis">Envoyer</button>
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
                         </form>
                     </div>
                 </div>

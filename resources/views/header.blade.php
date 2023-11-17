@@ -1,8 +1,8 @@
-<div class="container-fluid p-0 bg-recis">
+<div class="container-fluid p-0 bg-black">
     <div class="d-flex">
         <div class="ml-3 p-0">
             <a class="navbar-brand py-0" href="{{ route('accueil') }}">
-                <img style="width: 80px !important;" src="{{asset('assets/img/logo.jpg')}}" alt="logo recis" />
+                <img style="width: 160px !important;" src="{{asset('assets/img/logo.jpg')}}" alt="logo recis" />
             </a>
         </div>
         <div class="d-flex align-items-center justify-content-end w-100">
@@ -18,8 +18,8 @@
 <header class="sticky-top bg-white">
     <nav class="navbar navbar-expand-lg navbar-white sticky-top">
         <!-- Brand -->
-        <a id="ic-recis" class="navbar-brand-2 py-0" href="{{ route('accueil') }}">
-            <img src="{{asset('assets/img/logo.jpg')}}" alt="logo recis" />
+        <a id="ic" class="navbar-brand-2 py-0" href="{{ route('accueil') }}">
+            <img src="{{asset('assets/img/logo.jpg')}}" alt="logo AGTL" />
         </a>
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler custom-toggler ml-auto" type="button" data-toggle="collapse"
@@ -30,22 +30,23 @@
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
+                <li class="nav-item pr-4">
                     <a class="nav-link" href="{{ route('accueil') }}">accueil</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('services') }}">Services</a>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" href="{{ route('nosServices') }}">Services</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pr-4">
                     <a class="nav-link" href="{{ route('demande') }}">Formulaire de commande</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item pr-4">
                     <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                 </li>
-                <li class="nav-item">
+                
+                @guest
+                <li class="nav-item pr-4">
                     <a class="nav-link" href="{{ route('login') }}">Connexion</a>
                 </li>
-                @guest
                     @if (!Route::has('login'))
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
