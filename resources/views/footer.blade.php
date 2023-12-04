@@ -2,7 +2,7 @@
             <div class="col-12 col-md-10 mx-auto d-flex flex-wrap">
                 <div class="col-12 col-sm-6 pb-3">
                     <div class="mx-auto" style="width: fit-content">
-                        <span class="font-weight-bold sm-title-2 w-100 d-block">Contactez Nous</span>
+                        <span class="font-weight-bold sm-title-2 w-100 d-block"{{GoogleTranslate::trans("Contactez Nous", app()->getLocale())}}></span>
                         <div>Sise: Belle Ville - Bobo-Dioulasso</div>
                         <div>Tel: +226 XX XX XX XX</div>
                         <div>Email: info@gmail.com </div>
@@ -10,11 +10,11 @@
                 </div>
                     <div class="col-12 col-sm-3 pb-3">
                     <div class="mx-auto text-center1" style="width: fit-content">
-                        <span class="font-weight-bold sm-title-2  w-100 d-block">Liens rapides</span>
-                        <span>Accueil</span> <br>
-                        <span>Services</span> <br>
-                        <span>A propos</span> <br>
-                        <span>Faire une demande</span> <br>
+                        <span class="font-weight-bold sm-title-2  w-100 d-block">{{ GoogleTranslate::trans("Liens rapides", app()->getLocale()) }}</span>
+                        <span>{{ GoogleTranslate::trans("Accueil", app()->getLocale()) }}</span> <br>
+                        <span>{{ GoogleTranslate::trans("Services", app()->getLocale()) }}</span> <br>
+                        <span>{{ GoogleTranslate::trans("A propos", app()->getLocale()) }}</span> <br>
+                        <span>{{ GoogleTranslate::trans("Faire une demande", app()->getLocale()) }}</span> <br>
                     </div>
                 </div>
                 <div class="col-12 col-sm-3 pb-3">

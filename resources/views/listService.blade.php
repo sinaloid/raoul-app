@@ -15,7 +15,7 @@
               @include('menuAdmin')
           </div>
           <div class="row mt-3">
-              <div class="col-12 col-xl-11 mx-auto d-flex flex-wrap">
+              <div class="col-12 col-xl-11 mx-auto table-responsive">
                   <table class="table table-striped">
                       <thead>
                           <tr>
@@ -36,9 +36,9 @@
                                   <td>{{ $item->titre }}</td>
                                   <td>{{ $item->created_at }}</td>
                                   <td>
-                                      <button type="button" class="btn mx-2 btn-secondary font-weight-bold btn-sm"
+                                      <button type="button" class="btn mx-2 btn-secondary font-weight-bold btn-sm mb-2"
                                           data-toggle="modal" data-target="#voir{{ $key }}">Voir</button>
-                                      <button type="button" class="btn mx-2 btn-danger font-weight-bold btn-sm"
+                                      <button type="button" class="btn mx-2 btn-danger font-weight-bold btn-sm mb-2"
                                           data-toggle="modal" data-target="#delete{{ $key }}">Supprimer</button>
 
                                   </td>

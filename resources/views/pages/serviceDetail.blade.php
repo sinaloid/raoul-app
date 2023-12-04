@@ -22,16 +22,16 @@
     </div>
     <div class="row">
         <div class="col-12 col-md-10 col-lg-8 mx-auto mt-5 p-3 text-center">
-            <span class="title-2 importante font-weight-bold text-uppercase">Détails du service</span>
+            <span class="title-2 importante font-weight-bold text-uppercase">{{ GoogleTranslate::trans("Détails du service", app()->getLocale()) }}</span>
             
         </div>
         <div class="col-12 col-md-8 col-lg-6 mx-auto mt-2 p-3">
             <div>
                 <img width="100%" src="{{asset($data->image)}}" alt="service image" />
             </div>
-            <h2 class="py-4">{{$data->titre}}</h2>
+            <h2 class="py-4">{{ GoogleTranslate::trans($data->titre, app()->getLocale()) }}</h2>
             <p>
-               {{$data->description}}
+               {{ GoogleTranslate::trans($data->description, app()->getLocale()) }}
             </p>
         </div>
         

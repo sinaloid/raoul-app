@@ -10,7 +10,12 @@
                 <span class="d-block text-uppercase">AGTL</span>
                 <span class="d-block text-uppercase">Tél: +226 XX XX XX XX</span>
                 <span class="d-block text-uppercase">Email : infos@gmail.com</span>
-                <span class="d-block text-uppercase">Whatsapp: +226 XX XX XX XX</span>
+                <span class="d-block mb-1 text-uppercase">Whatsapp: +226 XX XX XX XX</span>
+                <select class="form-select changeLang">
+                    <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
+                    <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>France</option>
+                    <option value="es" {{ session()->get('locale') == 'es' ? 'selected' : '' }}>Spanish</option>
+                </select>
             </div>
         </div>
     </div>
@@ -31,21 +36,21 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item pr-4">
-                    <a class="nav-link" href="{{ route('accueil') }}">accueil</a>
+                    <a class="nav-link" href="{{ route('accueil') }}">{{ GoogleTranslate::trans('accueil', app()->getLocale()) }}</a>
                 </li>
                 <li class="nav-item pr-4">
-                    <a class="nav-link" href="{{ route('nosServices') }}">Services</a>
+                    <a class="nav-link" href="{{ route('nosServices') }}">{{ GoogleTranslate::trans('Services', app()->getLocale()) }}</a>
                 </li>
                 <li class="nav-item pr-4">
-                    <a class="nav-link" href="{{ route('demande') }}">Formulaire de commande</a>
+                    <a class="nav-link" href="{{ route('demande') }}">{{ GoogleTranslate::trans('Formulaire de commande', app()->getLocale()) }}</a>
                 </li>
                 <li class="nav-item pr-4">
-                    <a class="nav-link" href="{{ route('contact') }}">Contact</a>
+                    <a class="nav-link" href="{{ route('contact') }}">{{ GoogleTranslate::trans('Contact', app()->getLocale()) }}</a>
                 </li>
                 
                 @guest
                 <li class="nav-item pr-4">
-                    <a class="nav-link" href="{{ route('login') }}">Connexion</a>
+                    <a class="nav-link" href="{{ route('login') }}">{{ GoogleTranslate::trans('se connecter', app()->getLocale()) }}</a>
                 </li>
                     @if (!Route::has('login'))
                         <li class="nav-item">

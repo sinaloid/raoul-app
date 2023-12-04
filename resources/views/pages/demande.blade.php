@@ -22,32 +22,32 @@
     </div>
     <div class="row">
         <div class="col-12 col-md-10 col-lg-8 mx-auto mt-5 p-3 text-center">
-            <span class="title-2 importante font-weight-bold text-uppercase ">Formulaire de demande</span>
+            <span class="title-2 importante font-weight-bold text-uppercase ">{{ GoogleTranslate::trans("Formulaire de demande", app()->getLocale()) }}</span>
         </div>
         <form class="col-12 col-md-10 col-lg-8 mx-auto">
             <div class="row mb-5">
                 <div class="col-12 col-lg-6">
                     <div class="card p-3 ">
                         <div class="text-bold border-bottom mb-3 pb-2">
-                            1 - Informations personnel
+                            1 - {{ GoogleTranslate::trans("Informations personnelles", app()->getLocale()) }}
                         </div>
                         <div class="form-group">
-                            <label for="name">Nom prénom:</label>
+                            <label for="name">{{ GoogleTranslate::trans("Nom prénom", app()->getLocale()) }}:</label>
                             <input type="text" class="form-control" placeholder="Entrer votre nom et prénom"
                                 id="name">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Numéro de téléphone</label>
+                            <label for="phone">{{ GoogleTranslate::trans("Numéro de téléphone", app()->getLocale()) }}</label>
                             <input type="text" class="form-control" placeholder="Entrer votre numéro de téléphone"
                                 id="phone">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">{{ GoogleTranslate::trans("Email", app()->getLocale()) }}</label>
                             <input type="email" class="form-control" placeholder="Entrer votre adresse mail"
                                 id="email">
                         </div>
                         <div class="form-group">
-                            <label for="entreprise">Entreprise</label>
+                            <label for="entreprise">{{ GoogleTranslate::trans("Entreprise", app()->getLocale()) }}</label>
                             <input type="text" class="form-control" placeholder="Entrer votre nom de entreprise"
                                 id="entreprise_name">
                         </div>
@@ -58,27 +58,27 @@
                 <div class="col-12 col-lg-6">
                     <div class="card p-3 ">
                         <div class="text-bold border-bottom mb-3 pb-2">
-                            2 - Informations de l'exportateur
+                            2 - {{ GoogleTranslate::trans("Informations de l'exportateur", app()->getLocale()) }}
                         </div>
                         <div class="form-group">
-                            <label for="name">Nom prénom:</label>
+                            <label for="name">{{ GoogleTranslate::trans("Nom prénom", app()->getLocale()) }}:</label>
                             <input type="text" class="form-control" placeholder="Entrer le nom et prénom" id="name">
                         </div>
                         <div class="form-group">
-                            <label for="entreprise">Adresse</label>
+                            <label for="entreprise">{{ GoogleTranslate::trans("Adresse", app()->getLocale()) }}</label>
                             <input type="text" class="form-control" placeholder="Entrer l'adresse" id="entreprise_name">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Numéro de téléphone</label>
+                            <label for="phone">{{ GoogleTranslate::trans("Numéro de téléphone", app()->getLocale()) }}</label>
                             <input type="text" class="form-control" placeholder="Entrer le numéro de téléphone"
                                 id="phone">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">{{ GoogleTranslate::trans("Email", app()->getLocale()) }}</label>
                             <input type="email" class="form-control" placeholder="Entrer l'adresse mail" id="email">
                         </div>
                         <div class="form-group">
-                            <label for="entreprise">CNI ou Passeport</label>
+                            <label for="entreprise">{{ GoogleTranslate::trans("CNI ou Passeport", app()->getLocale()) }}</label>
                             <input type="text" class="form-control" placeholder="Entrer le numéro du cni ou passeport" />
                         </div>
                     </div>
@@ -86,27 +86,27 @@
                 <div class="col-12 col-lg-6">
                     <div class="card p-3 ">
                         <div class="text-bold border-bottom mb-3 pb-2">
-                            1 - Informations du receveur
+                            1 - {{ GoogleTranslate::trans("Informations du receveur", app()->getLocale()) }}
                         </div>
                         <div class="form-group">
-                            <label for="name">Nom prénom:</label>
+                            <label for="name">{{ GoogleTranslate::trans("Nom prénom", app()->getLocale()) }}:</label>
                             <input type="text" class="form-control" placeholder="Entrer le nom et prénom" id="name">
                         </div>
                         <div class="form-group">
-                            <label for="entreprise">Adresse</label>
+                            <label for="entreprise">{{ GoogleTranslate::trans("Adresse", app()->getLocale()) }}</label>
                             <input type="text" class="form-control" placeholder="Entrer l'adresse" id="entreprise_name">
                         </div>
                         <div class="form-group">
-                            <label for="phone">Numéro de téléphone</label>
+                            <label for="phone">{{ GoogleTranslate::trans("Numéro de téléphone", app()->getLocale()) }}</label>
                             <input type="text" class="form-control" placeholder="Entrer le numéro de téléphone"
                                 id="phone">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
+                            <label for="email">{{ GoogleTranslate::trans("Email", app()->getLocale()) }}</label>
                             <input type="email" class="form-control" placeholder="Entrer l'adresse mail" id="email">
                         </div>
                         <div class="form-group">
-                            <label for="entreprise">Pays de destination</label>
+                            <label for="entreprise">{{ GoogleTranslate::trans("Pays de destination", app()->getLocale()) }}</label>
                             <input type="text" class="form-control" placeholder="Entrer le nom du pays" />
                         </div>
                     </div>
@@ -116,18 +116,18 @@
                 <div class="col-12 col-lg-6">
                     <div class="card p-3">
                         <div class="text-bold border-bottom mb-3 pb-2">
-                            1 - Type d'expédition
+                            1 - {{ GoogleTranslate::trans("Type d'expédition", app()->getLocale()) }}
                         </div>
                         <div class="d-flex">
                             <div class="custom-control custom-radio custom-control-inline">
                                 <input type="radio" class="custom-control-input" id="customRadio" name="example"
                                     value="customEx">
-                                <label class="custom-control-label" for="customRadio">Roro</label>
+                                <label class="custom-control-label" for="customRadio">{{ GoogleTranslate::trans("Roro", app()->getLocale()) }}</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
                                 <input type="radio" class="custom-control-input" id="customRadio2" name="example"
                                     value="customEx">
-                                <label class="custom-control-label" for="customRadio2">Container & Airfreight</label>
+                                <label class="custom-control-label" for="customRadio2">{{ GoogleTranslate::trans("Container & Airfreight", app()->getLocale()) }}</label>
                             </div>
                         </div>
                     </div>
@@ -138,18 +138,18 @@
                     
                     <div class="card p-3">
                         <div class="text-bold border-bottom mb-3 pb-2">
-                            1 - Assurance
+                            1 - {{ GoogleTranslate::trans("Assurance", app()->getLocale()) }}
                         </div>
                         <div class="d-flex">
                             <div class="custom-control custom-radio custom-control-inline">
                                 <input type="radio" class="custom-control-input" id="customRadio" name="example"
                                     value="customEx">
-                                <label class="custom-control-label" for="customRadio">OUI</label>
+                                <label class="custom-control-label" for="customRadio">{{ GoogleTranslate::trans("Oui", app()->getLocale()) }}</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
                                 <input type="radio" class="custom-control-input" id="customRadio2" name="example"
                                     value="customEx">
-                                <label class="custom-control-label" for="customRadio2">NON</label>
+                                <label class="custom-control-label" for="customRadio2">{{ GoogleTranslate::trans("Non", app()->getLocale()) }}</label>
                             </div>
                         </div>
                     </div>
@@ -157,10 +157,10 @@
                 <div class="col-12 col-lg-6">
                     <div class="card p-3 ">
                         <div class="text-bold border-bottom mb-3 pb-2">
-                            1 - Douane
+                            1 - {{ GoogleTranslate::trans("Douane", app()->getLocale()) }}
                         </div>
                         <div class="form-group">
-                            <label for="email">Détails:</label>
+                            <label for="email">{{ GoogleTranslate::trans("Détails", app()->getLocale()) }} :</label>
                             <input type="email" class="form-control" placeholder="Entrer les détails" id="email">
                         </div>
                     </div>
@@ -173,9 +173,8 @@
                             1 - Commentaire
                         </div>
                         <div class="form-group">
-                            <label for="email">Détails:</label>
                             <div class="form-group">
-                                <label for="comment">Comment:</label>
+                                <label for="comment">{{ GoogleTranslate::trans("Commentaire", app()->getLocale()) }} :</label>
                                 <textarea class="form-control" rows="5" id="comment"></textarea>
                               </div>
                         </div>

@@ -1,9 +1,9 @@
 <div class="col-12 py-1 px-3 col-xl-11 mx-auto d-flex flex-wrap">
     <button data-toggle="modal" data-target="#service" type="button"
-        class="btn mx-2 btn-warning font-weight-bold btn-sm">Ajouter un services</button>
-    <a href="{{ route('admin') }}" class="btn mx-2 btn-secondary font-weight-bold btn-sm ml-auto">Voir les demandes</a>
-    <a href="{{ route('service') }}" class="btn mx-2 btn-secondary  font-weight-bold btn-sm">Voir les services</a>
-    <a href="{{ route('message') }}" class="btn mx-2 btn-secondary  font-weight-bold btn-sm">Voir les messages</a>
+        class="btn mx-2 btn-warning font-weight-bold btn-sm mb-3">Ajouter un services</button>
+    <a href="{{ route('admin') }}" class="btn mx-2 btn-secondary font-weight-bold btn-sm ml-auto mb-3">Voir les demandes</a>
+    <a href="{{ route('service') }}" class="btn mx-2 btn-secondary  font-weight-bold btn-sm mb-3">Voir les services</a>
+    <a href="{{ route('message') }}" class="btn mx-2 btn-secondary  font-weight-bold btn-sm mb-3">Voir les messages</a>
 </div>
 <div class="modal fade" id="service" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">

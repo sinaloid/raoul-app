@@ -22,7 +22,7 @@
     </div>
     <div class="row">
         <div class="col-12 col-md-10 col-lg-8 mx-auto mt-5 p-3 text-center">
-            <span class="title-2 importante font-weight-bold text-uppercase">Nos Services</span>
+            <span class="title-2 importante font-weight-bold text-uppercase">{{ GoogleTranslate::trans("Services", app()->getLocale()) }}</span>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore tenetur dolores aliquid laborum, sint neque
                 amet quod voluptates est saepe, corporis enim pariatur illo ad deserunt quos hic eius ab.
@@ -30,21 +30,25 @@
         </div>
         <div class="col-12 col-md-10 col-lg-8 mx-auto  d-flex flex-wrap">
             @foreach ($datas as $item)
-                <div class="col-12 col-md-4 py-3">
+            <div class="col-12 col-md-4 py-3">
 
-                    <div class="card p-3 w-100" style="height: 100%">
-                        <img width="100%" src="{{ asset($item->image) }}"
-                            alt="">
+                <div class="card p-3 w-100" style="height: 100%">
+                    <img width="100%" src="{{ asset($item->image) }}" alt="">
 
-                        <h2 class="sm-title-1 font-weight-bold">{{$item->titre}}</h2>
-                        <p>
-                            {{$item->description}}
-                        </p>
-                        <div>
-                            <a class="importante font-weight-bold" href="{{route("detailService",$item->id)}}">En savoir plus</a>
-                        </div>
+                    <h2 class="sm-title-1 font-weight-bold">
+                        {{ GoogleTranslate::trans($item->titre, app()->getLocale()) }}
+                    </h2>
+                    <p>
+
+                        {{ GoogleTranslate::trans($item->description, app()->getLocale()) }}
+                    </p>
+                    <div>
+                        <a class="importante font-weight-bold" href="{{ route('detailService', $item->id) }}">
+                            {{ GoogleTranslate::trans('En savoir plus', app()->getLocale()) }}
+                        </a>
                     </div>
                 </div>
+            </div>
             @endforeach
         </div>
 

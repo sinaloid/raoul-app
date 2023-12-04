@@ -15,7 +15,7 @@
               @include('menuAdmin')
           </div>
           <div class="row mt-3">
-              <div class="col-12 col-xl-11 mx-auto d-flex flex-wrap">
+              <div class="col-12 col-xl-11 mx-auto table-responsive">
                   <table class="table table-striped">
                       <thead>
                           <tr>
@@ -38,9 +38,9 @@
                               <td>12/12/2023</td>
                               <td>
                                   <button type="button"
-                                      class="btn mx-2 btn-secondary font-weight-bold btn-sm">Voir</button>
+                                      class="btn mx-2 btn-secondary font-weight-bold btn-sm mb-2">Voir</button>
                                   <button type="button"
-                                      class="btn mx-2 btn-danger font-weight-bold btn-sm">Supprimer</button>
+                                      class="btn mx-2 btn-danger font-weight-bold btn-sm mb-2">Supprimer</button>
 
                               </td>
                           </tr>

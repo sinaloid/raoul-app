@@ -15,7 +15,7 @@
                         <div class="row mb-3">
 
                             <div class="col-md-6 mx-auto">
-                                <label for="email" class="form-label text-md-end">Adresse email</label>
+                                <label for="email" class="form-label text-md-end">{{ GoogleTranslate::trans("Adresse email", app()->getLocale()) }}</label>
                                 <input id="email" type="email"
                                     class="form-control @error('email') is-invalid @enderror" name="email"
                                     placeholder="Entrez votre email"
@@ -32,7 +32,7 @@
                         <div class="row mb-3">
 
                             <div class="col-md-6 mx-auto mn-3">
-                                <label for="password" class="form-label text-md-end">Mots de passe</label>
+                                <label for="password" class="form-label text-md-end">{{ GoogleTranslate::trans("Mots de passe", app()->getLocale()) }}</label>
 
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror" name="password"
@@ -53,7 +53,8 @@
                             <div class="col-12">
                                 <div class="d-flex justify-content-center mb-3">
                                     <button type="submit" class="btn btn-primary">
-                                        connexion
+                                        
+                                        {{ GoogleTranslate::trans("Connexion", app()->getLocale()) }}
                                     </button>
                                 </div>
                             </div>
@@ -61,7 +62,7 @@
                         <div class="d-flex justify-content-center mb-3">
                             @if (Route::has('password.request'))
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Mots de passe oublié ?
+                                    {{ GoogleTranslate::trans("Mots de passe oublié ?", app()->getLocale()) }}
                                 </a>
                             @endif
                         </div>
