@@ -18,14 +18,17 @@
                     excepturi ullam totam tenetur.
                 </p>
                 <div class="mt-3">
-                    <a class="btn btn-black font-weight-bold" href="{{ '#' }}">Faire une demande</a>
+                    <a class="btn btn-black font-weight-bold" href="{{ route('demande') }}">
+                        {{ GoogleTranslate::trans('Faire une demande', app()->getLocale()) }}
+                    </a>
+                    
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-12 col-md-10 col-lg-8 mx-auto mt-5 p-3 text-center">
-            <span class="title-2 importante font-weight-bold text-uppercase">Nos Services</span>
+            <span class="title-2 importante font-weight-bold text-uppercase">{{ GoogleTranslate::trans('Services', app()->getLocale()) }}</span>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quaerat odio atque nobis rerum
                 doloremque modi excepturi corrupti consectetur. Ad exercitationem esse eveniet ipsum eaque, expedita
