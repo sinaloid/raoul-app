@@ -12,8 +12,8 @@
                 <span class="d-block text-uppercase">Email : infos@gmail.com</span>
                 <span class="d-block mb-1 text-uppercase">Whatsapp: +226 XX XX XX XX</span>
                 <select class="form-select changeLang">
-                    <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
                     <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>France</option>
+                    <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
                     <option value="es" {{ session()->get('locale') == 'es' ? 'selected' : '' }}>Spanish</option>
                 </select>
             </div>
