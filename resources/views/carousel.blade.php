@@ -14,20 +14,24 @@
             <!-- The slideshow -->
             <div class="carousel-inner banier1">
                 <div class="carousel-item active">
-                    <img src="{{ asset('carousel/air_freight.jpg') }}" alt="air freight" width="1100" height="500">
+                    <img class="img-fluid d-none d-md-block" src="{{ asset('carousel/air_freight.jpg') }}" alt="air freight">
+                    <img class="img-fluid d-md-none" src="{{ asset('carousel/air_freight_mobile.jpg') }}" alt="air freight">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('carousel/ground_shipping.png') }}" alt="ground shipping" width="1100"
-                        height="500">
+                    <img class="img-fluid d-none d-md-block" src="{{ asset('carousel/ground_shipping.png') }}" alt="ground shipping">
+                    <img class="img-fluid d-md-none" src="{{ asset('carousel/ground_shipping_mobile.png') }}" alt="ground shipping">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('carousel/roro.jpg') }}" alt="roro" width="1100" height="500">
+                    <img class="img-fluid d-none d-md-block" src="{{ asset('carousel/roro.jpg') }}" alt="roro">
+                    <img class="img-fluid d-md-none" src="{{ asset('carousel/roro_mobile.jpg') }}" alt="roro">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('carousel/sea_freight.jpg') }}" alt="sea freight" width="1100" height="500">
+                    <img class="img-fluid d-none d-md-block" src="{{ asset('carousel/sea_freight.jpg') }}" alt="sea freight">
+                    <img class="img-fluid d-md-none" src="{{ asset('carousel/sea_freight_mobile.jpg') }}" alt="sea freight">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('carousel/warehouse.png') }}" alt="warehouse" width="1100" height="500">
+                    <img class="img-fluid d-none d-md-block" src="{{ asset('carousel/warehouse.png') }}" alt="warehouse">
+                    <img class="img-fluid d-md-none" src="{{ asset('carousel/warehouse_mobile.png') }}" alt="warehouse">
                 </div>
             </div>
 
