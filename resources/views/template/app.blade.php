@@ -21,24 +21,9 @@
 </head>
 
 <body>
+    @include('lang')
     @include('header')
-    <!--div class="card-body">
-        <div class="row">
-            <div class="col-md-2">
-                <strong>Select Language: </strong>
-            </div>
-            <div class="col-md-4">
-                <select class="form-select changeLang">
-                    <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
-                    <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>France</option>
-                    <option value="es" {{ session()->get('locale') == 'es' ? 'selected' : '' }}>Spanish</option>
-                </select>
-            </div>
-        </div>
-
-        <h3>{{ GoogleTranslate::trans('Welcome', app()->getLocale()) }}</h3>
-        <h3>{{ GoogleTranslate::trans('Hello World', app()->getLocale()) }}</h3>
-    </div-->
+   
     <div class="container-fluid main">
         @yield('content')
     </div>

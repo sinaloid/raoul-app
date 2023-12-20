@@ -1,3 +1,4 @@
+
 <div class="container-fluid p-0 bg-black">
     <div class="d-flex">
         <div class="ml-3 p-0">
@@ -14,7 +15,6 @@
                 <select class="form-select changeLang">
                     <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>France</option>
                     <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
-                    <option value="es" {{ session()->get('locale') == 'es' ? 'selected' : '' }}>Spanish</option>
                 </select>
             </div>
         </div>
@@ -36,21 +36,21 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item pr-4">
-                    <a class="nav-link" href="{{ route('accueil') }}">{{ GoogleTranslate::trans('accueil', app()->getLocale()) }}</a>
+                    <a class="nav-link" href="{{ route('accueil') }}">{{ $lang[app()->getLocale()]['accueil'] }}</a>
                 </li>
                 <li class="nav-item pr-4">
-                    <a class="nav-link" href="{{ route('nosServices') }}">{{ GoogleTranslate::trans('Services', app()->getLocale()) }}</a>
+                    <a class="nav-link" href="{{ route('nosServices') }}">{{ $lang[app()->getLocale()]['service'] }}</a>
                 </li>
                 <li class="nav-item pr-4">
-                    <a class="nav-link" href="{{ route('demande') }}">{{ GoogleTranslate::trans('Formulaire de commande', app()->getLocale()) }}</a>
+                    <a class="nav-link" href="{{ route('demande') }}">{{ $lang[app()->getLocale()]['formulaire'] }}</a>
                 </li>
                 <li class="nav-item pr-4">
-                    <a class="nav-link" href="{{ route('contact') }}">{{ GoogleTranslate::trans('Contact', app()->getLocale()) }}</a>
+                    <a class="nav-link" href="{{ route('contact') }}">{{ $lang[app()->getLocale()]['contact'] }}</a>
                 </li>
                 
                 @guest
                 <li class="nav-item pr-4">
-                    <a class="nav-link" href="{{ route('login') }}">{{ GoogleTranslate::trans('se connecter', app()->getLocale()) }}</a>
+                    <a class="nav-link" href="{{ route('login') }}">{{ $lang[app()->getLocale()]['connecter'] }}</a>
                 </li>
                     @if (!Route::has('login'))
                         <li class="nav-item">

@@ -54,7 +54,8 @@ class Controller extends BaseController
 
     public function detailService($slug){
 
-        $data = Service::where('id',$slug)->first();
+        //$data = Service::where('id',$slug)->first();
+        $data = $slug;
 
         return view('pages.serviceDetail', compact('data'));
     }
