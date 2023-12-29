@@ -4,8 +4,8 @@
                     <div class="mx-auto" style="width: fit-content">
                         <span class="font-weight-bold sm-title-2 w-100 d-block"{{GoogleTranslate::trans("Contactez Nous", app()->getLocale())}}></span>
                         <div>Sise: Belle Ville - Bobo-Dioulasso</div>
-                        <div>Tel: +226 XX XX XX XX</div>
-                        <div>Email: info@gmail.com </div>
+                        <div>Tel: +226 71 30 29 73 / +1 (832) 406-5684</div>
+                        <div>Email: aguila.trading.logistics@agtlcargo.com</div>
                     </div>
                 </div>
                     <div class="col-12 col-sm-3 pb-3">
