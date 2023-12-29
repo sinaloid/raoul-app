@@ -88,7 +88,7 @@
                         <h2 class="sm-title-1 font-weight-bold">
                             {{ $item["titre"] }}
                         </h2>
-                        <p>
+                        <p class="text-200">
 
                             {{ $item["contenu"] }}
                         </p>

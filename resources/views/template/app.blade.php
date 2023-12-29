@@ -8,11 +8,12 @@
     <title>@yield('page_title')</title>
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/logo.jpg') }}" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/logo.jpg') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+    
     @yield('css')
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/8b7c4e5629.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

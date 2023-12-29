@@ -83,7 +83,7 @@
                     <div class="card p-3 w-100" style="height: 100%">
                         <img width="100%" src="{{ asset('services/' . $item['image']) }}" alt="">
 
-                        <h2 class="sm-title-1 font-weight-bold">
+                        <h2 class="title-1 font-weight-bold">
                             {{ $item['titre'] }}
                         </h2>
                         <p class="text-200">
