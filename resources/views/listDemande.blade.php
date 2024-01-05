@@ -194,7 +194,7 @@
                                           <div class="modal-footer">
                                               <button type="button" class="btn btn-secondary"
                                                   data-dismiss="modal">Non</button>
-                                              <form action="{{ route('deleteMessage', $item->id) }}" method="POST">
+                                              <form action="{{ route('deleteDemande', $item->id) }}" method="POST">
                                                   @csrf
                                                   @method('delete')
                                                   <button type="submit" class="btn btn-primary">Oui</button>

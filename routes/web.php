@@ -47,6 +47,7 @@ Route::group([
 ], function () {
 
     Route::get('/liste-demandes', [HomeController::class, 'home'])->name('admin');
+    Route::delete('/delete-demandes/{id}', [HomeController::class, 'deleteDemande'])->name('deleteDemande');
 
     Route::post('/create-services', [HomeController::class, 'createService'])->name('createService');
     Route::get('/liste-services', [HomeController::class, 'service'])->name('service');
