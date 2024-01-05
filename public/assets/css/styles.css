@@ -55,7 +55,7 @@ body{
     color: rgba(0, 0, 0, 0.5);
 }
 
-.importante{
+.importante, .importante:hover{
     color: var(--primary-color);
 }
 
@@ -272,6 +272,10 @@ p {
   .text-200 {
      /* Largeur de votre conteneur de texte */
     height: 100px; /* Largeur de votre conteneur de texte */
+  }
+
+  .text-black{
+    color: #010101 ;
   }
 
   .form-select{

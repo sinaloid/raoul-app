@@ -33,6 +33,7 @@ Route::get('contact', function () {
 
 Route::get('lang/home', [LangController::class, 'index']);
 Route::get('lang/change', [LangController::class, 'change'])->name('changeLang');
+Route::post('/create-demandes', [Controller::class, 'createDemande'])->name('createDemande');
 
 
 

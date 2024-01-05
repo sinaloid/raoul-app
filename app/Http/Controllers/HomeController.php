@@ -32,13 +32,13 @@ class HomeController extends Controller
 
     public function home(){
 
-        return view('listDemande');
+        $datas = Demande::all();
+        return view('listDemande',compact('datas'));
     }
 
     public function service(){
         $datas = Service::all();
         return view('listService',compact('datas'));
-        return view('listService');
     }
 
     public function createService(Request $request){
@@ -71,6 +71,8 @@ class HomeController extends Controller
         $datas = Service::all();
         return view('listService',compact('datas'));
     }
+
+    
 
     public function message(){
         $datas = Contact::all();

@@ -142,17 +142,22 @@
                     </div>
                     <div class="ms-4">
                         <p class="mb-2">{{ GoogleTranslate::trans('Appelez-nous maintenant', app()->getLocale()) }}</p>
-                        <h5 class="mb-0">+226 71 30 29 73 / +1 (832) 406-5684</h5>
+                        <p class="mb-0 font-weight-bold">
+                            <a class="text-black" href="tel:+22671302973">+226 71 30 29 73</a> / <a class="text-black" href="tel:+18324065684">+1 (832) 406-5684</a>
+                        </p>
                     </div>
                 </div>
-                <div class="bg-white rounded d-flex align-items-center p-5 mb-4">
+                <div class="bg-white rounded d-flex align-items-center flex-wrap py-5 px-2 mb-4">
                     <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white"
                         style="width: 55px; height: 55px;">
                         <i class="fa fa-envelope-open text-primary"></i>
                     </div>
-                    <div class="ms-4">
+                    <div class="ms-2">
                         <p class="mb-2">{{ GoogleTranslate::trans('Envoyez-nous un mail', app()->getLocale()) }}</p>
-                        <h5 class="mb-0">aguila.trading.logistics@agtlcargo.com</h5>
+                        <p class="mb-0 font-weight-bold ">
+                            <a class="text-black" href="mailto:aguila.trading.logistics@agtlcargo.com">aguila.trading.logistics@agtlcargo.com</a></span>
+
+                        </p>
                     </div>
                 </div>
             </div>

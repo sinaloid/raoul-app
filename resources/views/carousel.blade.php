@@ -1,6 +1,6 @@
 <div class="row bannier1">
-    <div class="col-12 col-md-10 col-lg-8 mx-auto text-center">
-        <div id="demo" class="carousel slide" data-ride="carousel">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto px-0 text-center">
+        <div id="demo" class="carousel slide px-0" data-ride="carousel">
 
             <!-- Indicators -->
             <ul class="carousel-indicators">
