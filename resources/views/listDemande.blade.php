@@ -161,13 +161,14 @@
                                                           <span
                                                               class="font-weight-bold">{{ $item->douane }}</span>
                                                       </div>
-                                                      <div>
-                                                          <span>{{ $lang[app()->getLocale()]["Commentaire"] }} : </span>
-                                                              <p>
-                                                                {{ $item->description }}
-                                                              </p>
-                                                      </div>
+                                                      
                                                   </div>
+                                                  <div class="col-12 mb-4">
+                                                    <span>{{ $lang[app()->getLocale()]["Commentaire"] }} : </span>
+                                                        <p>
+                                                          {{ $item->description }}
+                                                        </p>
+                                                </div>
                                               </div>
                                               
                                           </div>
